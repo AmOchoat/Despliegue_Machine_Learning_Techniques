@@ -5,7 +5,6 @@ import pydicom
 import numpy as np
 import pandas as pd
 import os
-import cv2
 import json
 import matplotlib.pyplot as plt
 import seaborn as sns
