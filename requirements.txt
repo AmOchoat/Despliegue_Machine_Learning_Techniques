@@ -1,0 +1,11 @@
+pandas
+numpy
+torch
+torchvision
+opencv-contrib-python
+pathlib
+scikit-image
+joblib
+tqdm
+
+
