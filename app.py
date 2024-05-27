@@ -84,7 +84,7 @@ if zip_file:
             tab1.write('Prediciendo imágenes...')            
 
             model = DenseNet121_Classifier(num_classes=6)
-            model.load_state_dict(torch.load('densenet121_hemorrhage_classifier.pth', map_location=torch.device('cpu')))
+            model.load_state_dict(torch.load('./densenet121_hemorrhage_classifier.pth', map_location=torch.device('cpu')))
             model.eval()
 
             device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
