@@ -132,7 +132,10 @@ if st.session_state["df"] is not None:
     tab2_1.write(df)
     
     tab2_2.write('Seleccione una imagen para ver la predicción')
-    img_name = tab2_2.selectbox('Imágenes', [img.name for img in zip_path.iterdir()])
+
+    img_names = sorted([img.name for img in zip_path.iterdir()])
+
+    img_name = tab2_2.selectbox('Imágenes', img_names)
     
     img_path = zip_path / img_name
 
